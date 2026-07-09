@@ -7,7 +7,7 @@ class JogoEngine:
         self.acertos: int = 0
         self.erros: int = 0
         self.palavra_atual: Optional[Dict[str, str]] = None
-        self.aguardando_reposta: bool = False
+        self.aguardando_resposta: bool = False
         
     def iniciar_novo_desafio(self) -> str:
         self.palavra_atual = self.repository.obter_palavra_aleatoria()
